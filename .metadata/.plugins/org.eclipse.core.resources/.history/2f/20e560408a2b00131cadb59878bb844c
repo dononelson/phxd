@@ -1,0 +1,21 @@
+package com.visa.json.utils;
+
+public class StripLinesFromJSON {
+	
+	public StripLinesFromJSON() {
+	}
+	
+	public static void main(String[] args) {
+		if (args.length < 2) {
+			System.err.println("Usage: StripLinesfromJSON <inputpath/inputfile> <outputpath/outputfile");
+			System.exit(1);
+		}
+		
+		StripLinesFromJSON sl = new StripLinesFromJSON();
+		sl.strip(args[0];
+	}
+
+	private void strip(String string) {
+	}
+	
+}

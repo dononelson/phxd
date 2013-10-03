@@ -1,0 +1,7 @@
+description.autobuilding=false
+description.buildorder=build/batchsrv/webclient/RemoteSystemsTempFiles/Servers
+description.defaultbuildorder=false
+description.maxfilestatesize=10485760
+eclipse.preferences.version=1
+refresh.lightweight.enabled=true
+version=1

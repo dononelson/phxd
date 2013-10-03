@@ -1,0 +1,201 @@
+package com.visa.json.parser;
+
+import java.io.IOException;
+
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.log4j.Logger;
+
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonToken;
+
+public class IOCJacksonMapper extends Mapper<LongWritable, Text, Text, Text> {
+	
+	private static final char DELIM = '|';
+	private static final String MARK = "<<<<<<<<<<<==============";
+	
+	private static StringBuilder jsonObject = new StringBuilder();
+	// private static StringBuilder parsed = new StringBuilder();
+	private static int braceLevel = 0;
+	private JsonFactory factory = new JsonFactory();
+	private JsonParser parser = null;
+	private final Logger log;
+	
+	public IOCJacksonMapper() {
+		log = Logger.getLogger(this.getClass());
+	}
+	
+	@Override
+	public void map(LongWritable key, Text value, Context context) {
+		String inStr = value.toString();
+		if (inStr.contains(JsonToken.START_OBJECT.asString())) {
+			++braceLevel;
+		}
+		jsonObject.append(inStr);
+		
+		if (inStr.contains(JsonToken.END_OBJECT.asString())) {
+			--braceLevel;
+		}
+		
+		if (braceLevel == 0) {
+			try {
+				parser = factory.createParser(jsonObject.toString());
+				String parsedJson = parse();
+				context.write(null, new Text(parsedJson));
+				clearStrBuilderj(jsonObject);
+			}
+			catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		else if (braceLevel < 0) {
+			// Error in processing, partial file, etc.
+			// clear the contents - bad data
+			clearStrBuilderj(jsonObject);
+			braceLevel = 0;
+		}
+		
+		/*
+		 * boolean first = true; JsonToken token = null; try { parser =
+		 * factory.createParser(value.toString()); } catch (IOException e) {
+		 * context.getCounter("fatalError", "factory.createParser");
+		 * log.fatal("IOException creating JsonParser from factory");
+		 * e.printStackTrace(); System.err.println(e); return; }
+		 * 
+		 * System.out.println(MARK + "Parser factory created");
+		 * 
+		 * try { token = parser.nextToken(); System.out.println(MARK +
+		 * " Token: " + token); } catch (JsonParseException e1) {
+		 * context.getCounter("invalidToken", "nextToken").increment(1);
+		 * log.error("Invalid token #" + context.getCounter("invalidToken",
+		 * "invalidTokens")); e1.printStackTrace(); } catch (IOException e1) {
+		 * context.getCounter("IOException", "ioExceptions").increment(1);
+		 * log.error("IOException getting next token #" +
+		 * context.getCounter("IOException", "ioExceptions"));
+		 * e1.printStackTrace(); }
+		 * 
+		 * if (token != JsonToken.START_OBJECT && !isEndToken(token)) { //
+		 * String fieldName = parser.getCurrentName(); // move to value try {
+		 * parser.nextToken(); System.out.println(MARK + " Token: " + token); }
+		 * catch (JsonParseException e) { // context.getCounter("invalidToken",
+		 * "nextToken").increment(1); log.error("Invalid token #" +
+		 * context.getCounter("invalidToken", "invalidTokens"));
+		 * e.printStackTrace(); } catch (IOException e) { //
+		 * context.getCounter("IOException", // "ioExceptions").increment(1);
+		 * log.error("IOException getting next token #" +
+		 * context.getCounter("IOException", "ioExceptions"));
+		 * e.printStackTrace(); }
+		 * 
+		 * if (first) { first = false; } else { jsonObject.append(DELIM); }
+		 * 
+		 * try { jsonObject.append(parser.getValueAsString()); } catch
+		 * (JsonParseException e) { // context.getCounter("invalidToken", //
+		 * "invalidValueType").increment(1);
+		 * log.error("Invalid token value type #" +
+		 * context.getCounter("invalidToken", "invalidValueType"));
+		 * e.printStackTrace(); } catch (IOException e) { //
+		 * context.getCounter("IOException", // "ioExceptions").increment(1);
+		 * log.error("IOException getting next token #" +
+		 * context.getCounter("IOException", "ioExceptions"));
+		 * e.printStackTrace(); } finally { System.out.println(MARK +
+		 * " jsonObject: " + jsonObject);
+		 * 
+		 * }
+		 * 
+		 * do { try { parser.nextToken(); // Name System.out.println(MARK +
+		 * " Token: " + token); } catch (JsonParseException e) { //
+		 * context.getCounter("invalidToken", // "nextToken").increment(1);
+		 * log.error("Invalid token #" + context.getCounter("invalidToken",
+		 * "invalidTokens")); e.printStackTrace(); } catch (IOException e) { //
+		 * context.getCounter("IOException", // "ioExceptions").increment(1);
+		 * log.error("IOException getting next token #" +
+		 * context.getCounter("IOException", "ioExceptions"));
+		 * e.printStackTrace(); } // Name? if
+		 * (token.equals(JsonToken.END_OBJECT)) { flush = true; break; }
+		 * 
+		 * try { token = parser.nextToken(); // Value System.out.println(MARK +
+		 * " Token: " + token); } catch (JsonParseException e) { //
+		 * context.getCounter("invalidToken", // "nextToken").increment(1);
+		 * log.error("Invalid token #" + context.getCounter("invalidToken",
+		 * "invalidTokens")); e.printStackTrace(); } catch (IOException e) { //
+		 * context.getCounter("IOException", // "ioExceptions").increment(1);
+		 * log.error("IOException getting next token #" +
+		 * context.getCounter("IOException", "ioExceptions"));
+		 * e.printStackTrace(); } // Value? if (!isEndToken(token)) { if (first)
+		 * { first = false; } else { jsonObject.append(DELIM); } try {
+		 * jsonObject.append(parser.getValueAsString()); } catch
+		 * (JsonParseException e) { // context.getCounter("invalidToken", //
+		 * "invalidValueType").increment(1);
+		 * log.error("Invalid token value type #" +
+		 * context.getCounter("invalidToken", "invalidValueType"));
+		 * e.printStackTrace(); } catch (IOException e) {
+		 * context.getCounter("IOException", "ioExceptions").increment(1);
+		 * log.error("IOException getting value as String #" +
+		 * context.getCounter("IOException", "ioExceptions"));
+		 * e.printStackTrace(); } finally { System.out.println(MARK +
+		 * " jsonObject: " + jsonObject); } }
+		 * 
+		 * else if (token.equals(JsonToken.END_OBJECT)) { flush = true; break; }
+		 * 
+		 * else { break; } } while (true);
+		 * 
+		 * try { parser.close(); } catch (IOException e) { //
+		 * context.getCounter("IOException", // "ioExceptions").increment(1);
+		 * log.error("IOException closing parser #" +
+		 * context.getCounter("IOException", "ioExceptions"));
+		 * e.printStackTrace(); } // System.out.println(fieldName + ": " +
+		 * sValue); } else if (token.equals(JsonToken.END_OBJECT)) { try {
+		 * parser.close(); } catch (IOException e) { // TODO Auto-generated
+		 * catch block e.printStackTrace(); } flush = true; }
+		 * 
+		 * if (flush) { flush = false; try { context.write(null, new
+		 * Text(jsonObject.toString())); } catch (IOException |
+		 * InterruptedException e) { // TODO Auto-generated catch block
+		 * e.printStackTrace(); System.err.println(e); } finally {
+		 * jsonObject.delete(0, jsonObject.length() - 1); } }
+		 */
+	}
+	
+	private String parse() throws JsonParseException, IOException {
+		boolean first = true;
+		StringBuilder parsed = new StringBuilder();
+		// clearStrBuilderj(parsed);
+		parser = factory.createParser(jsonObject.toString());
+		JsonToken token = parser.nextToken();
+		if (token != JsonToken.START_OBJECT) {
+			throw new JsonParseException("Expecting start of JSON object", parser.getCurrentLocation());
+		}
+		while (parser.nextToken() != JsonToken.END_OBJECT) {
+			// Current token is name
+			parser.nextToken();
+			String value = parser.getText();
+			if (first) {
+				first = false;
+			}
+			else {
+				parsed.append(DELIM);
+			}
+			parsed.append(value);
+		}
+		if (parsed.charAt(parsed.length() - 1) == DELIM) {
+			parsed.deleteCharAt(parsed.length() - 1);
+		}
+		return parsed.toString();
+	}
+	
+	private boolean isEndToken(JsonToken token) {
+		return (token == null || token.equals(JsonToken.END_OBJECT));
+	}
+	
+	private void clearStrBuilderj(StringBuilder toClear) {
+		toClear.delete(0, toClear.length() - 1);
+	}
+}

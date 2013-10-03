@@ -1,0 +1,31 @@
+package com.visa.mr;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+import org.junit.BeforeClass;
+import org.junit.Ignore;
+
+@Ignore
+public class LargeInputFileCreatorTest {
+	
+	private static BufferedWriter bw;
+	private static BufferedReader reader;
+	String line;
+	StringBuffer jsonText = new StringBuffer();
+	
+	@BeforeClass
+	public static void initIO() throws FileNotFoundException {
+		reader = new BufferedReader(new FileReader("/tmp/sample.json"));
+	}
+	
+	@Ignore
+	public void create2GBJsonMutliLineFile() {
+		// If you really want to run this, have 2GB available in the /tmp directory
+		// And you have to have a sample multi-line JSON file named "sample.json"
+		// in the /tmp directory
+		
+	}
+}

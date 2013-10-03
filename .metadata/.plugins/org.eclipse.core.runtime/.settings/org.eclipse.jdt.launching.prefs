@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.launching.PREF_CONNECT_TIMEOUT=20000
+org.eclipse.jdt.launching.PREF_DEFAULT_ENVIRONMENTS_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<defaultEnvironments>\n<defaultEnvironment environmentId\="JavaSE-1.7" vmId\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1377108855710"/>\n</defaultEnvironments>\n
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1377108855710" defaultVMConnector\="">\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\n<vm id\="1377108855710" name\="jdk1.7.0_25" path\="/opt/jdk1.7.0_25"/>\n</vmType>\n</vmSettings>\n
+org.eclipse.jdt.launching.only_include_exported_classpath_entries=false

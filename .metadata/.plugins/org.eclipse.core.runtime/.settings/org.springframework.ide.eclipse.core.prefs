@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+org.springframework.ide.eclipse.core.validator.enable.org.springframework.ide.eclipse.bestpractices.beansvalidator=true
+org.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.bestpractices.com.springsource.sts.bestpractices.ImportElementsAtTopRulee-org.springframework.ide.eclipse.bestpractices.beansvalidator=true
+org.springframework.ide.eclipse.core.validator.rule.enable.org.springframework.ide.eclipse.bestpractices.com.springsource.sts.bestpractices.UseBeanInheritance-org.springframework.ide.eclipse.bestpractices.beansvalidator=true

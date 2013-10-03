@@ -1,0 +1,13 @@
+eclipse.m2..disableGroupIdDuplicateOfParentWarning=true
+eclipse.m2..disableVersionDuplicateOfParentWarning=true
+eclipse.m2.WorkspacelifecycleMappingsLocation=/home/hadoop/data/workspace/phxd/.metadata/.plugins/org.eclipse.m2e.core/lifecycle-mapping-metadata.xml
+eclipse.m2.debugOutput=true
+eclipse.m2.defaultPomEditorPage=true
+eclipse.m2.defaultRuntime=/opt/apache-maven-3.1.0
+eclipse.m2.downloadJavadoc=true
+eclipse.m2.downloadSources=true
+eclipse.m2.globalSettingsFile=/opt/apache-maven-3.1.0/conf/settings.xml
+eclipse.m2.runtimes=/opt/apache-maven-3.1.0
+eclipse.m2.updateProjects=true
+eclipse.m2.warn_incomplete_mapping=true
+eclipse.preferences.version=1

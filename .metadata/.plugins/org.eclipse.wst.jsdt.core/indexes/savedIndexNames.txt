@@ -1,0 +1,1 @@
+INDEX VERSION 1.122+/home/hadoop/data/workspace/phxd/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes

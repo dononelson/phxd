@@ -1,0 +1,4 @@
+browser-choice=0
+browsers=<?xml version\="1.0" encoding\="UTF-8"?>\n<web-browsers current\="1">\n<system/>\n<external location\="/usr/bin/firefox" name\="Firefox"/>\n</web-browsers>
+eclipse.preferences.version=1
+internalWebBrowserHistory=http\://docs.spring.io/sts/nan/v340/NewAndNoteworthy-M1.html|*|http\://static.springsource.org/sts/nan/v340/NewAndNoteworthy-M1.html|*|http\://127.0.0.1\:38290/help/nftopic/jar\:file\:/home/hadoop/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.0.2-alpha/hadoop-mapreduce-client-core-2.0.2-alpha-javadoc.jar\!/org/apache/hadoop/mapreduce/Partitioner.html|*|http\://docs.cloudfoundry.com/|*|http\://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html|*|http\://www.cloudfoundry.com|*|http\://docs.cloudfoundry.com/docs/using/managing-apps/ide/sts.html|*|

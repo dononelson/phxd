@@ -1,0 +1,60 @@
+package com.visa.mr;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.junit.BeforeClass;
+import org.junit.Ignore;
+
+@Ignore
+public class LargeInputFileCreatorTest {
+	
+	private static BufferedWriter bw;
+	private static BufferedReader reader;
+	String line;
+	StringBuffer jsonText = new StringBuffer();
+	int MAX_FILE_SIZE = Integer.MAX_VALUE - 50000;
+	
+	@BeforeClass
+	public static void initIO() throws FileNotFoundException {
+		reader = new BufferedReader(new FileReader("/tmp/sample.json"));
+	}
+	
+	@Ignore
+	public void create2GBJsonMutliLineFile() {
+		// If you really want to run this, have 2GB available in the /tmp directory
+		// And you have to have a sample multi-line JSON file named "sample.json"
+		// in the /tmp directory
+		
+		// An arbritrary file size
+		
+		StringBuffer origFileContents = new StringBuffer();
+		StringBuffer newFileContents = new StringBuffer(MAX_FILE_SIZE + 1000);
+		
+		int fileSize = 0;
+		String line = null;
+		while (true) {
+			try {
+				line = reader.readLine();
+			}
+			catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				System.exit(1);
+			}
+			if (line == null) {
+				break;
+			}
+			origFileContents.append(line);
+		}
+		
+		int newFileSize  = 0;
+		while(newFileSize <= MAX_FILE_SIZE) {
+			newFileContents.append()
+		}
+		
+	}
+}

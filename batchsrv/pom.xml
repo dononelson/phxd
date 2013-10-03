@@ -1,0 +1,89 @@
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.pivotal.don.xd</groupId>
+		<artifactId>build</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../build</relativePath>
+	</parent>
+	
+	<groupId>com.pivotal.don.xd</groupId>
+	<artifactId>batchsrv</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>batchsrv</name>
+	
+	<dependencies>
+		<!-- <dependency> <groupId>org.apache.hadoop</groupId> <artifactId>hadoop-core</artifactId> <version>1.0.0</version> </dependency> 
+			<dependency> <groupId>org.apache.hadoop</groupId> <artifactId>hadoop-hdfs</artifactId> <version>2.0.2-alpha</version> </dependency> 
+			<dependency> <groupId>org.apache.hadoop</groupId> <artifactId>hadoop-mapreduce-client</artifactId> <version>2.0.2-alpha</version> 
+			</dependency> -->
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-common</artifactId>
+			<version>2.0.2-alpha</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-mapreduce-client-app</artifactId>
+			<version>2.0.2-alpha</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-mapreduce-client-common</artifactId>
+			<version>2.0.2-alpha</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-mapreduce-client-core</artifactId>
+			<version>2.0.2-alpha</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-mapreduce-client-jobclient</artifactId>
+			<version>2.0.2-alpha</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-yarn-api</artifactId>
+			<version>2.0.2-alpha</version>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+		</dependency>
+<!-- 
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.2.3</version>
+
+		</dependency>
+ -->
+ 	</dependencies>
+</project>

@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+ignored.extensions=.gif, .exe, .png, .jpg, .zip, .jar, .svg, .psd, ~, .GIF, .EXE, .PNG, .JPG, .ZIP, .JAR, .SVG, .PSD
+ignored.names=bin, target, build
+ignored.prefixes=.

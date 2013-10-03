@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;experimental/src/test/java/com.visa.json.parser&apos;&#x0A;- Original project: &apos;batchsrv&apos;&#x0A;- Destination element: &apos;experimental/src/test/java/com.visa.json.parser&apos;&#x0A;- Original elements:&#x0A;     com.visa.json.parser.JacksonMapperTests.java&#x0A;     com.visa.json.parser.JacksonParserTest.java&#x0A;- Update references to refactored element" description="Move compilation units" destination="=experimental/src\/test\/java&lt;com.visa.json.parser" element1="/src\/test\/java&lt;com.visa.json.parser{JacksonMapperTests.java" element2="/src\/test\/java&lt;com.visa.json.parser{JacksonParserTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1380468650471" units="2" version="1.0"/>
+</session>

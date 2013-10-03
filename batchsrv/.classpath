@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/phd1/hadoop-annotations-2.0.2-alpha-gphd-2.0.1.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/phd1/hadoop-auth-2.0.2-alpha-gphd-2.0.1.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/phd1/hadoop-common-2.0.2-alpha-gphd-2.0.1.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/phd1/hadoop-distcp-2.0.2-alpha-gphd-2.0.1.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/phd1/hadoop-hdfs-2.0.2-alpha-gphd-2.0.1.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/phd1/hadoop-mapreduce-client-core-2.0.2-alpha-gphd-2.0.1.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/phd1/hadoop-streaming-2.0.2-alpha-gphd-2.0.1.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/phd1/hadoop-yarn-api-2.0.2-alpha-gphd-2.0.1.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/phd1/hadoop-yarn-common-2.0.2-alpha-gphd-2.0.1.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/phd1/protobuf-java-2.4.0a.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/activemq-core-5.6.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/activemq-protobuf-1.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/amqp-client-3.0.4.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/args4j-2.0.16.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/aspectjrt-1.7.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/aspectjweaver-1.7.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/cglib-2.2.1-v20090111.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-beanutils-core-1.8.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-cli-1.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-configuration-1.6.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-digester-1.8.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-el-1.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-logging-api-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-math-2.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-modeler-2.0.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-net-2.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/core-3.1.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/fusemq-leveldb-1.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/gemfire-7.0.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/geronimo-j2ee-management_1.1_spec-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/geronimo-jms_1.1_spec-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/groovy-all-2.1.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/guava-12.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/guice-multibindings-3.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/hawtbuf-1.9.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/hawtbuf-proto-1.9.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/hawtdispatch-1.9.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/hawtdispatch-scala-1.9.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/hawtdispatch-transport-1.9.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/hawtjni-runtime-1.5.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/hsqldb-1.8.0.10.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jackson-annotations-2.2.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jackson-core-2.2.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jackson-core-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jackson-databind-2.2.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jackson-mapper-asl-1.9.12.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jasper-compiler-5.5.12.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jasper-runtime-5.5.12.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jasypt-1.8.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/javax.inject-1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jcl-over-slf4j-1.7.5.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jets3t-0.7.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jetty-util-6.1.26.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/joda-time-2.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jolokia-core-1.1.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jolokia-jmx-1.1.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jolokia-jvm-1.1.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jolokia-spring-1.1.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jsr305-1.3.9.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/jsr311-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/kahadb-5.6.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/kfs-0.3.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/lettuce-2.3.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/leveldb-0.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/leveldb-api-0.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/leveldbjni-1.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/leveldbjni-linux32-1.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/leveldbjni-linux64-1.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/leveldbjni-osx-1.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/mongo-java-driver-2.9.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/mqtt-client-0.2.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/mqtt-client-1.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/mysql-connector-java-5.1.23.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/netty-3.6.5.Final.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/objenesis-1.3.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/org.osgi.core-4.1.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/oro-2.0.8.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/postgresql-9.1-901-1.jdbc4.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/scala-library-2.9.1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/slf4j-api-1.7.5.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/slf4j-log4j12-1.7.5.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/snappy-java-1.0.3.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/splunk-1.0.0.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-amqp-1.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-aop-3.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-batch-core-2.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-batch-infrastructure-2.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-beans-3.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-context-3.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-context-support-3.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-core-3.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-data-commons-1.6.0.M1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-data-commons-core-1.4.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-data-gemfire-1.3.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-data-hadoop-1.0.1.RC1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-data-mongodb-1.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-data-redis-1.1.0.M1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-expression-3.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-hateoas-0.7.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-amqp-3.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-core-3.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-event-3.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-file-3.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-gemfire-3.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-groovy-3.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-ip-3.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-jdbc-3.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-jms-3.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-jmx-3.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-mqtt-1.0.0.M1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-redis-3.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-scripting-3.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-splunk-1.0.0.M1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-stream-3.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-integration-syslog-3.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-jdbc-3.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-jms-3.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-plugin-core-0.8.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-rabbit-1.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-retry-1.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-security-crypto-3.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-social-config-1.1.0.M3.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-social-core-1.1.0.M3.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-social-twitter-1.1.0.M3.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-social-web-1.1.0.M3.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-tx-3.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-web-3.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-webmvc-3.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-xd-analytics-1.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-xd-dirt-1.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-xd-hadoop-1.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-xd-http-1.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-xd-jdbc-1.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-xd-module-1.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-xd-rest-domain-1.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/spring-xd-tuple-1.0.0.M2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/tomcat-el-api-7.0.35.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/tomcat-embed-core-7.0.35.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/tomcat-embed-logging-juli-7.0.35.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/tomcat-jsp-api-7.0.35.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/tomcat-servlet-api-7.0.35.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/uuid-3.2.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/xmlenc-0.52.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/xpp3_min-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="/opt/spring-xd-1.0.0.M2/xd/lib/xstream-1.3.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/gphd/hadoop-yarn-2.0.2_alpha_gphd_2_0_1_0/hadoop-yarn-common-2.0.2-alpha-gphd-2.0.1.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/usr/lib/gphd/hadoop-mapreduce-2.0.2_alpha_gphd_2_0_1_0/hadoop-archives-2.0.2-alpha-gphd-2.0.1.0.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/gphd/hadoop-mapreduce-2.0.2_alpha_gphd_2_0_1_0/hadoop-mapreduce-client-shuffle-2.0.2-alpha-gphd-2.0.1.0.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
